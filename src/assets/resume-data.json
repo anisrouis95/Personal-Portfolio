@@ -1,0 +1,223 @@
+{
+  "summary": {
+    "name": "resume.summary.name",
+    "title": "resume.summary.title",
+    "email": "resume.summary.email",
+    "phone": "resume.summary.phone",
+    "profile": "resume.summary.profile"
+  },
+  "skills": {
+    "technical": [
+      "resume.skills.technical.html",
+      "resume.skills.technical.css",
+      "resume.skills.technical.javascript",
+      "resume.skills.technical.typescript",
+      "resume.skills.technical.reactjs",
+      "resume.skills.technical.python",
+      "resume.skills.technical.angular",
+      "resume.skills.technical.tailwindcss",
+      "resume.skills.technical.express",
+      "resume.skills.technical.mongoose",
+      "resume.skills.technical.mongodb",
+      "resume.skills.technical.nodejs",
+      "resume.skills.technical.flask",
+      "resume.skills.technical.django"
+    ],
+    "languages": [
+      {
+        "name": "resume.skills.languages.arabic",
+        "level": "resume.skills.languages.native"
+      },
+      {
+        "name": "resume.skills.languages.turkish",
+        "level": "resume.skills.languages.limited"
+      },
+      {
+        "name": "resume.skills.languages.french",
+        "level": "resume.skills.languages.professional"
+      },
+      {
+        "name": "resume.skills.languages.english",
+        "level": "resume.skills.languages.professional_b2"
+      }
+    ],
+    "soft": [
+      "resume.skills.soft.autonomy",
+      "resume.skills.soft.flexibility",
+      "resume.skills.soft.team_management",
+      "resume.skills.soft.mobility"
+    ],
+    "hard": [
+      "resume.skills.hard.photoshop",
+      "resume.skills.hard.github",
+      "resume.skills.hard.trello",
+      "resume.skills.hard.canva"
+    ],
+    "interests": [
+      "resume.skills.interests.video_games",
+      "resume.skills.interests.playing_guitar"
+    ]
+  },
+  "experience": [
+    {
+      "title": "resume.experience.hippomed.title",
+      "company": "resume.experience.hippomed.company",
+      "location": "resume.experience.hippomed.location",
+      "period": "resume.experience.hippomed.period",
+      "description": [
+        "resume.experience.hippomed.desc1",
+        "resume.experience.hippomed.desc2",
+        "resume.experience.hippomed.desc3",
+        "resume.experience.hippomed.desc4",
+        "resume.experience.hippomed.desc5",
+        "resume.experience.hippomed.desc6"
+      ]
+    },
+    {
+      "title": "resume.experience.infotexa.title",
+      "company": "resume.experience.infotexa.company",
+      "period": "resume.experience.infotexa.period",
+      "description": [
+        "resume.experience.infotexa.desc1",
+        "resume.experience.infotexa.desc2",
+        "resume.experience.infotexa.desc3",
+        "resume.experience.infotexa.desc4",
+        "resume.experience.infotexa.desc5"
+      ]
+    },
+    {
+      "title": "resume.experience.finconnect.title",
+      "company": "resume.experience.finconnect.company",
+      "period": "resume.experience.finconnect.period",
+      "description": [
+        "resume.experience.finconnect.desc1",
+        "resume.experience.finconnect.desc2",
+        "resume.experience.finconnect.desc3"
+      ]
+    },
+    {
+      "title": "resume.experience.laevitas.title",
+      "company": "resume.experience.laevitas.company",
+      "period": "resume.experience.laevitas.period",
+      "description": ["resume.experience.laevitas.desc1"]
+    },
+    {
+      "title": "resume.experience.creativespace.title",
+      "company": "resume.experience.creativespace.company",
+      "period": "resume.experience.creativespace.period",
+      "description": ["resume.experience.creativespace.desc1"]
+    },
+    {
+      "title": "resume.experience.tunisair.title",
+      "company": "resume.experience.tunisair.company",
+      "period": "resume.experience.tunisair.period",
+      "description": ["resume.experience.tunisair.desc1"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "resume.projects.scalpel.name",
+      "role": "resume.projects.scalpel.role",
+      "period": "resume.projects.scalpel.period",
+      "description": "resume.projects.scalpel.description",
+      "technologies": ["resume.projects.scalpel.technologies"],
+      "link": ""
+    },
+    {
+      "name": "resume.projects.anas.name",
+      "role": "resume.projects.anas.role",
+      "period": "resume.projects.anas.period",
+      "description": "resume.projects.anas.description",
+      "technologies": ["resume.projects.anas.technologies"],
+      "link": ""
+    },
+    {
+      "name": "resume.projects.rami.name",
+      "role": "resume.projects.rami.role",
+      "period": "resume.projects.rami.period",
+      "description": "resume.projects.rami.description",
+      "link": "https://rami-ben.onrender.com/",
+      "technologies": ["resume.projects.rami.technologies"]
+    },
+    {
+      "name": "resume.projects.stce.name",
+      "role": "resume.projects.stce.role",
+      "period": "resume.projects.stce.period",
+      "description": "resume.projects.stce.description",
+      "technologies": ["resume.projects.stce.technologies"],
+      "link": "https://www.stce.tn/"
+    },
+    {
+      "name": "resume.projects.clinicare.name",
+      "role": "resume.projects.clinicare.role",
+      "period": "resume.projects.clinicare.period",
+      "description": "resume.projects.clinicare.description",
+      "technologies": ["resume.projects.clinicare.technologies"],
+      "link": ""
+    },
+    {
+      "name": "resume.projects.portfolio.name",
+      "role": "resume.projects.portfolio.role",
+      "period": "resume.projects.portfolio.period",
+      "description": "resume.projects.portfolio.description",
+      "technologies": ["resume.projects.portfolio.technologies"],
+      "link": ""
+    }
+  ],
+  "education": [
+    {
+      "degree": "resume.education.marmara.degree",
+      "institution": "resume.education.marmara.institution",
+      "location": "resume.education.marmara.location",
+      "period": "resume.education.marmara.period",
+      "details": [
+        "resume.education.marmara.detail1",
+        "resume.education.marmara.detail2"
+      ]
+    },
+    {
+      "degree": "resume.education.sehir.degree",
+      "institution": "resume.education.sehir.institution",
+      "period": "resume.education.sehir.period",
+      "details": ["resume.education.sehir.detail1"]
+    },
+    {
+      "degree": "resume.education.menzah.degree",
+      "institution": "resume.education.menzah.institution",
+      "period": "resume.education.menzah.period",
+      "details": ["resume.education.menzah.detail1"]
+    }
+  ],
+  "certificates": [
+    {
+      "name": "resume.certificates.angular.name",
+      "issuer": "resume.certificates.angular.issuer",
+      "period": "resume.certificates.angular.period",
+      "details": [
+        "resume.certificates.angular.detail1",
+        "resume.certificates.angular.detail2",
+        "resume.certificates.angular.detail3"
+      ]
+    },
+    {
+      "name": "resume.certificates.react.name",
+      "issuer": "resume.certificates.react.issuer",
+      "period": "resume.certificates.react.period",
+      "details": [
+        "resume.certificates.react.detail1",
+        "resume.certificates.react.detail2",
+        "resume.certificates.react.detail3"
+      ]
+    },
+    {
+      "name": "resume.certificates.fullstack.name",
+      "issuer": "resume.certificates.fullstack.issuer",
+      "period": "resume.certificates.fullstack.period",
+      "details": [
+        "resume.certificates.fullstack.detail1",
+        "resume.certificates.fullstack.detail2",
+        "resume.certificates.fullstack.detail3"
+      ]
+    }
+  ]
+}

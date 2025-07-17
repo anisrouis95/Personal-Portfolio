@@ -1,0 +1,329 @@
+{
+  "HEADER": {
+    "NAME": "Anis Rouis",
+    "TITLE": "Développeur Fullstack",
+    "CONTACT": {
+      "LINKEDIN": "LinkedIn",
+      "GITHUB": "GitHub",
+      "EMAIL": "Email"
+    },
+    "LANG": {
+      "EN": "Anglais",
+      "FR": "Français",
+      "AR": "Arabe"
+    },
+    "NAV": {
+      "SUMMARY": "À propos",
+      "SKILLS": "Compétences",
+      "EXPERIENCE": "Expérience",
+      "PROJECTS": "Projets",
+      "EDUCATION": "Éducation",
+      "CONTACT": "Contact"
+    }
+  },
+  "SUMMARY": {
+    "HEADING": "À propos de moi",
+    "LINE1": "Développeur Fullstack expérimenté avec plus de 5 ans dans le secteur.",
+    "LINE2": "Compétent dans la création d'applications web évolutives avec Angular, Node.js et les technologies modernes.",
+    "LINE3": "Solide expérience en développement frontend et backend.",
+    "LINE4": "Passionné par le code propre, les bonnes pratiques et l'apprentissage continu.",
+    "LINE5": "Actuellement axé sur la livraison de solutions de haute qualité centrées sur l'utilisateur."
+  },
+  "SKILLS": {
+    "HEADING": "Compétences",
+    "FRONTEND": {
+      "TITLE": "Frontend",
+      "ANGULAR": "Angular",
+      "REACT": "React",
+      "TYPESCRIPT": "TypeScript"
+    },
+    "BACKEND": {
+      "TITLE": "Backend",
+      "NODE": "Node.js",
+      "NEST": "NestJS",
+      "DJANGO": "Django"
+    },
+    "DATABASES": {
+      "TITLE": "Bases de données",
+      "POSTGRES": "PostgreSQL",
+      "MONGO": "MongoDB"
+    },
+    "DEVOPS": {
+      "TITLE": "DevOps & Outils",
+      "DOCKER": "Docker",
+      "GIT": "Git",
+      "AWS": "AWS",
+      "CICD": "CI/CD"
+    }
+  },
+  "EXPERIENCE": {
+    "HEADING": "Expérience",
+    "EXP1": {
+      "TITLE": "Développeur Fullstack Senior",
+      "COMPANY": "Tech Solutions Inc.",
+      "LOCATION": "Télétravail",
+      "DURATION": "Nov. 2021 – Présent",
+      "ACHIEVEMENT1": "Dirigé le développement d'une plateforme SaaS évolutive utilisée par plus de 10 000 utilisateurs.",
+      "ACHIEVEMENT2": "Mise en place de pipelines CI/CD, réduisant le temps de déploiement de 40 %.",
+      "ACHIEVEMENT3": "Encadré une équipe de 5 développeurs juniors et amélioré la qualité du code.",
+      "ACHIEVEMENT4": "Collaboré avec des équipes pluridisciplinaires pour livrer les projets à temps."
+    },
+    "EXP2": {
+      "TITLE": "Ingénieur Logiciel",
+      "COMPANY": "Innovatech",
+      "LOCATION": "Tunis, Tunisie",
+      "DURATION": "Juil. 2018 – Oct. 2021",
+      "ACHIEVEMENT1": "Développé des API RESTful et intégré des services tiers.",
+      "ACHIEVEMENT2": "Optimisé les requêtes de base de données, améliorant les performances de 30 %.",
+      "ACHIEVEMENT3": "Contribué aux fonctionnalités frontend avec Angular et React."
+    }
+  },
+  "PROJECTS": {
+    "HEADING": "Projets",
+    "TECH": "Technologies",
+    "LINK_LABEL": "Voir sur GitHub / Démo en ligne",
+    "PROJ1": {
+      "NAME": "Générateur de CV en ligne",
+      "DESC": "Application web pour créer, personnaliser et exporter des CV professionnels.",
+      "STACK": "Angular, Node.js, MongoDB, Tailwind CSS",
+      "LINK": "https://github.com/anisrouis/online-resume"
+    },
+    "PROJ2": {
+      "NAME": "API de gestion de tâches",
+      "DESC": "API RESTful pour gérer les tâches, les utilisateurs et l'authentification.",
+      "STACK": "NestJS, PostgreSQL, Docker",
+      "LINK": "https://github.com/anisrouis/task-manager-api"
+    },
+    "PROJ3": {
+      "NAME": "Site portfolio",
+      "DESC": "Portfolio personnel pour présenter projets, compétences et expérience.",
+      "STACK": "React, TypeScript, Vercel",
+      "LINK": "https://anisrouis.dev"
+    }
+  },
+  "EDUCATION": {
+    "HEADING": "Éducation",
+    "EDU1": {
+      "DEGREE": "Master en Informatique",
+      "SCHOOL": "Université de Tunis El Manar",
+      "YEAR": "2020",
+      "SUBTITLE": "Diplômé avec mention honorable"
+    },
+    "EDU2": {
+      "DEGREE": "Licence en Génie Logiciel",
+      "SCHOOL": "École Nationale Supérieure d'Informatique",
+      "YEAR": "2018"
+    }
+  },
+  "CONTACT": {
+    "HEADING": "Contactez-moi",
+    "FULL_NAME": "Nom complet",
+    "EMAIL": "Adresse e-mail",
+    "SUBJECT": "Sujet (optionnel)",
+    "MESSAGE": "Message",
+    "SUBMIT": "Envoyer le message",
+    "ERROR_REQUIRED": "Ce champ est requis.",
+    "ERROR_EMAIL": "Veuillez entrer une adresse e-mail valide.",
+    "SUCCESS": "Merci ! Votre message a été envoyé."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "2024 Anis Rouis. Tous droits réservés.",
+    "DARK": "Mode sombre",
+    "LIGHT": "Mode clair"
+  },
+  "resume": {
+    "summary": {
+      "name": "Anis Rouis",
+      "title": "Développeur full stack web",
+      "email": "anis.rouis.marmara@gmail.com",
+      "phone": "+216 92 718 505",
+      "profile": "Développeur Web Fullstack avec une expérience pratique en Angular & Django, spécialisé dans la création de plateformes médicales et CRM. Solide expérience en développement front-end réactif, systèmes back-office et intégrations tierces (APIs réseaux sociaux, services email, etc.)."
+    },
+    "skills": {
+      "technical": {
+        "html": "HTML",
+        "css": "CSS",
+        "javascript": "JavaScript",
+        "typescript": "TypeScript",
+        "reactjs": "React JS",
+        "python": "Python",
+        "angular": "Angular",
+        "tailwindcss": "Tailwind CSS",
+        "express": "Express",
+        "mongoose": "Mongoose",
+        "mongodb": "MongoDB",
+        "nodejs": "NodeJS",
+        "flask": "Flask",
+        "django": "Django"
+      },
+      "languages": {
+        "arabic": "Arabe",
+        "native": "Maîtrise native",
+        "turkish": "Turc",
+        "limited": "Compétence professionnelle limitée B1",
+        "french": "Français",
+        "professional": "Compétence professionnelle C1",
+        "english": "Anglais",
+        "professional_b2": "Compétence professionnelle B2"
+      },
+      "soft": {
+        "autonomy": "Autonomie",
+        "flexibility": "Flexibilité",
+        "team_management": "Gestion d'équipe",
+        "mobility": "Mobilité"
+      },
+      "hard": {
+        "photoshop": "Photoshop",
+        "github": "GitHub",
+        "trello": "Trello",
+        "canva": "Canva"
+      },
+      "interests": {
+        "video_games": "Jeux vidéo",
+        "playing_guitar": "Jouer de la guitare"
+      }
+    },
+    "experience": {
+      "hippomed": {
+        "title": "Développeur FullStack",
+        "company": "Hippomed AI",
+        "location": "Jardin de Carthage",
+        "period": "2024/11 – Présent",
+        "desc1": "Développement fullstack avec Angular & Django sur divers projets web.",
+        "desc2": "Direction de projets comme Scalpel (ERP médical), CRM de messagerie pour Dr. Anas Gherissi, et plusieurs sites portfolios de médecins.",
+        "desc3": "Création du site officiel de la Société Tunisienne des Chirurgiens Esthétiques (STCE): https://stce.tn/",
+        "desc4": "Intégration d'APIs pour Gmail, Facebook, Instagram et WhatsApp.",
+        "desc5": "Exploration d'interfaces 3D avec Three.js et Angular Animations.",
+        "desc6": "Site web: https://hippomed.ai/"
+      },
+      "infotexa": {
+        "title": "Développeur Web",
+        "company": "InfoTexa",
+        "period": "2024/06 – 2024/09",
+        "desc1": "Site web créé avec Angular 17.",
+        "desc2": "Création de composants et édition de contenu.",
+        "desc3": "Intégration de mailing et newsletter avec EmailJS.",
+        "desc4": "Animations réalisées avec Angular Animations.",
+        "desc5": "Site web: https://infotexa.com/"
+      },
+      "finconnect": {
+        "title": "Développeur Web",
+        "company": "FinConnect",
+        "period": "2024/07 – 2024/09",
+        "desc1": "Site web créé de zéro selon le design du client.",
+        "desc2": "Responsive pour tous les écrans (mobile et tablette inclus).",
+        "desc3": "Site web: https://finconnect-fs.com/"
+      },
+      "laevitas": {
+        "title": "Stagiaire Front-End",
+        "company": "Laevitas",
+        "period": "2023/06 – 2023/08",
+        "desc1": "Développement d'une application web front-end pour la gestion des factures et itemisations pour plusieurs entreprises avec Angular."
+      },
+      "creativespace": {
+        "title": "Développeur Front-end",
+        "company": "Creative Space",
+        "period": "2023/08 – 2023/09",
+        "desc1": "Développement d'une landing page web front-end présentant les services du centre en HTML, CSS et JavaScript."
+      },
+      "tunisair": {
+        "title": "Développeur Front-end",
+        "company": "Tunisair (Tunisian Airlines)",
+        "period": "2019/06 – 2019/10",
+        "desc1": "Développement d'une application web pour l'interface d'administration de suivi des avions (retards, gestion, bagages) avec Symphony, HTML et CSS."
+      }
+    },
+    "projects": {
+      "scalpel": {
+        "name": "Scalpel - Système ERP médical",
+        "role": "Scrumaster / Développeur Fullstack / Équipe",
+        "period": "2025/01 – Présent",
+        "description": "Plateforme ERP pour la gestion de clinique : patients, rendez-vous, facturation.",
+        "technologies": "HTML, CSS, Tailwind, TypeScript, Angular, Python, Django"
+      },
+      "anas": {
+        "name": "Dr. Anas Gherissi – CRM de messagerie & site web",
+        "role": "Scrumaster / Développeur Fullstack / Équipe",
+        "period": "2025/05 – Présent",
+        "description": "CRM intégrant Gmail, Facebook, WhatsApp et Instagram pour une communication centralisée.",
+        "technologies": "HTML, CSS, Tailwind, Angular, Python, Django"
+      },
+      "rami": {
+        "name": "Dr. Rami Ben Arab – Site portfolio avec admin panel",
+        "role": "Scrumaster / Développeur Fullstack / Équipe",
+        "period": "2025/02 – 2025/04",
+        "description": "Site fullstack avec admin panel pour la présence en ligne et la gestion de contenu du médecin.",
+        "technologies": "HTML, CSS, Tailwind, Angular, Python, Django"
+      },
+      "stce": {
+        "name": "STCE – Société Tunisienne des Chirurgiens Esthétiques",
+        "role": "Scrumaster / Développeur Fullstack / Équipe",
+        "period": "2024/11 – 2024/12",
+        "description": "Site officiel de la STCE (stce.tn), présentation des membres, événements et publications.",
+        "technologies": "HTML, CSS, Tailwind, Angular, Python, Django"
+      },
+      "clinicare": {
+        "name": "CliniCare",
+        "role": "Scrumaster / Développeur FrontEnd / Équipe",
+        "period": "1 mois",
+        "description": "Développement d'un site web pour faciliter la communication interne et la coordination des tâches du personnel médical, modernisation des archives, accès facilité aux données pour une meilleure gestion de l'information et du temps.",
+        "technologies": "HTML, CSS, JavaScript, NodeJS, Express, React JS, TailwindCss"
+      },
+      "portfolio": {
+        "name": "Portfolio personnel",
+        "role": "Scrumaster / Développeur Fullstack / Équipe",
+        "period": "1 semaine",
+        "description": "Développement d'un portfolio en ligne reprenant tout le contenu de mon CV, accessible sans contrainte géographique.",
+        "technologies": "Angular, Tailwind CSS"
+      }
+    },
+    "education": {
+      "marmara": {
+        "degree": "Licence en ingénierie informatique",
+        "institution": "Université Marmara",
+        "location": "Istanbul, Turquie",
+        "period": "2020 – 2022",
+        "detail1": "Diplôme de 2 ans en ingénierie informatique",
+        "detail2": "Java, JavaFX, C."
+      },
+      "sehir": {
+        "degree": "Licence en ingénierie informatique",
+        "institution": "Université Sehir",
+        "period": "2016 – 2020",
+        "detail1": "Diplôme de 4ème année"
+      },
+      "menzah": {
+        "degree": "Baccalauréat en études techniques",
+        "institution": "Lycée Menzah 6",
+        "period": "2010 – 2014",
+        "detail1": "Mécanique et électronique"
+      }
+    },
+    "certificates": {
+      "angular": {
+        "name": "Développement Frontend avec Angular",
+        "issuer": "Board Infinity",
+        "period": "2024/06 – présent",
+        "detail1": "Expérience pratique avec Angular pour des applications web dynamiques et évolutives.",
+        "detail2": "Maîtrise des composants, modules, directives, services et templates Angular.",
+        "detail3": "Maîtrise des bonnes pratiques pour des applications Angular de qualité."
+      },
+      "react": {
+        "name": "React Avancé",
+        "issuer": "Meta / Coursera",
+        "period": "2024/04 – 2024/05",
+        "detail1": "Rendu efficace de listes et formulaires dans React, gestion d'état partagé.",
+        "detail2": "Utilisation de hooks courants et création de hooks personnalisés.",
+        "detail3": "Maîtrise de JSX, patterns avancés et techniques de test/debug."
+      },
+      "fullstack": {
+        "name": "Certification Full Stack Web Development",
+        "issuer": "Coding Dojo Africa",
+        "period": "2023/10 – 2024/03",
+        "detail1": "1200+ heures de code en JavaScript, Python et Java dont 3 projets.",
+        "detail2": "Pair programming et travail sur des algorithmes au quotidien.",
+        "detail3": "Formation soft skills pour améliorer la communication et la collaboration."
+      }
+    }
+  }
+}

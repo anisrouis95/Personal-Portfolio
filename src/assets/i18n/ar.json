@@ -1,0 +1,321 @@
+{
+  "HEADER": {
+    "NAME": "أنيس رويس",
+    "TITLE": "مطور برمجيات متكامل",
+    "CONTACT": {
+      "LINKEDIN": "لينكدإن",
+      "GITHUB": "جيت هاب",
+      "EMAIL": "البريد الإلكتروني"
+    },
+    "LANG": {
+      "EN": "الإنجليزية",
+      "FR": "الفرنسية",
+      "AR": "العربية"
+    }
+  },
+  "SUMMARY": {
+    "HEADING": "نبذة عني",
+    "LINE1": "مطور برمجيات متكامل ذو خبرة تزيد عن 5 سنوات في المجال.",
+    "LINE2": "بارع في بناء تطبيقات الويب القابلة للتوسع باستخدام Angular وNode.js والتقنيات الحديثة.",
+    "LINE3": "خلفية قوية في تطوير الواجهة الأمامية والخلفية.",
+    "LINE4": "شغوف بكتابة الكود النظيف وأفضل الممارسات والتعلم المستمر.",
+    "LINE5": "أركز حالياً على تقديم حلول عالية الجودة تركز على المستخدم."
+  },
+  "SKILLS": {
+    "HEADING": "المهارات",
+    "FRONTEND": {
+      "TITLE": "الواجهة الأمامية",
+      "ANGULAR": "أنجولار",
+      "REACT": "ريأكت",
+      "TYPESCRIPT": "تايب سكريبت"
+    },
+    "BACKEND": {
+      "TITLE": "الخلفية",
+      "NODE": "نود.جي إس",
+      "NEST": "نيست جي إس",
+      "DJANGO": "جانغو"
+    },
+    "DATABASES": {
+      "TITLE": "قواعد البيانات",
+      "POSTGRES": "بوستجري إس كيو إل",
+      "MONGO": "مونغو دي بي"
+    },
+    "DEVOPS": {
+      "TITLE": "ديف أوبس والأدوات",
+      "DOCKER": "دوكر",
+      "GIT": "جيت",
+      "AWS": "خدمات أمازون ويب (AWS)",
+      "CICD": "تكامل مستمر/تسليم مستمر (CI/CD)"
+    }
+  },
+  "EXPERIENCE": {
+    "HEADING": "الخبرة",
+    "EXP1": {
+      "TITLE": "مطور برمجيات متكامل أول",
+      "COMPANY": "تك سوليوشنز إنك.",
+      "LOCATION": "عن بُعد",
+      "DURATION": "نوفمبر 2021 – الآن",
+      "ACHIEVEMENT1": "قيادة تطوير منصة SaaS قابلة للتوسع يستخدمها أكثر من 10,000 مستخدم.",
+      "ACHIEVEMENT2": "تنفيذ خطوط CI/CD مما قلل وقت النشر بنسبة 40٪.",
+      "ACHIEVEMENT3": "إرشاد فريق من 5 مطورين مبتدئين وتحسين جودة الكود.",
+      "ACHIEVEMENT4": "التعاون مع فرق متعددة التخصصات لتسليم المشاريع في الوقت المحدد."
+    },
+    "EXP2": {
+      "TITLE": "مهندس برمجيات",
+      "COMPANY": "إنوفيتيك",
+      "LOCATION": "تونس، تونس",
+      "DURATION": "يوليو 2018 – أكتوبر 2021",
+      "ACHIEVEMENT1": "تطوير واجهات برمجة تطبيقات RESTful ودمج خدمات الطرف الثالث.",
+      "ACHIEVEMENT2": "تحسين استعلامات قواعد البيانات مما زاد الأداء بنسبة 30٪.",
+      "ACHIEVEMENT3": "المساهمة في ميزات الواجهة الأمامية باستخدام Angular وReact."
+    }
+  },
+  "PROJECTS": {
+    "HEADING": "المشاريع",
+    "TECH": "التقنيات المستخدمة",
+    "LINK_LABEL": "عرض على GitHub / العرض الحي",
+    "PROJ1": {
+      "NAME": "منشئ السيرة الذاتية عبر الإنترنت",
+      "DESC": "تطبيق ويب لإنشاء وتخصيص وتصدير السير الذاتية الاحترافية.",
+      "STACK": "Angular، Node.js، MongoDB، Tailwind CSS",
+      "LINK": "https://github.com/anisrouis/online-resume"
+    },
+    "PROJ2": {
+      "NAME": "واجهة برمجة تطبيقات إدارة المهام",
+      "DESC": "واجهة RESTful لإدارة المهام والمستخدمين والمصادقة.",
+      "STACK": "NestJS، PostgreSQL، Docker",
+      "LINK": "https://github.com/anisrouis/task-manager-api"
+    },
+    "PROJ3": {
+      "NAME": "موقع بورتفوليو شخصي",
+      "DESC": "موقع شخصي لعرض المشاريع والمهارات والخبرة.",
+      "STACK": "React، TypeScript، Vercel",
+      "LINK": "https://anisrouis.dev"
+    }
+  },
+  "EDUCATION": {
+    "HEADING": "التعليم",
+    "EDU1": {
+      "DEGREE": "ماجستير في علوم الحاسوب",
+      "SCHOOL": "جامعة تونس المنار",
+      "YEAR": "2020",
+      "SUBTITLE": "تخرج مع مرتبة الشرف"
+    },
+    "EDU2": {
+      "DEGREE": "بكالوريوس في هندسة البرمجيات",
+      "SCHOOL": "المدرسة الوطنية العليا للمعلوماتية",
+      "YEAR": "2018"
+    }
+  },
+  "CONTACT": {
+    "HEADING": "اتصل بي",
+    "FULL_NAME": "الاسم الكامل",
+    "EMAIL": "البريد الإلكتروني",
+    "SUBJECT": "الموضوع (اختياري)",
+    "MESSAGE": "الرسالة",
+    "SUBMIT": "إرسال الرسالة",
+    "ERROR_REQUIRED": "هذه الخانة مطلوبة.",
+    "ERROR_EMAIL": "يرجى إدخال بريد إلكتروني صالح.",
+    "SUCCESS": "شكرًا لك! تم إرسال رسالتك بنجاح."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "2024 أنيس رويس. جميع الحقوق محفوظة.",
+    "DARK": "الوضع الداكن",
+    "LIGHT": "الوضع الفاتح"
+  },
+  "resume": {
+    "summary": {
+      "name": "أنيس رويس",
+      "title": "مطور ويب متكامل",
+      "email": "anis.rouis.marmara@gmail.com",
+      "phone": "+216 92 718 505",
+      "profile": "مطور ويب متكامل بخبرة عملية في Angular وDjango، متخصص في بناء منصات طبية وCRM. خلفية قوية في تطوير الواجهات الأمامية المتجاوبة، أنظمة الإدارة الخلفية، وتكامل الخدمات الخارجية (مثل واجهات برمجة تطبيقات وسائل التواصل الاجتماعي وخدمات البريد الإلكتروني)."
+    },
+    "skills": {
+      "technical": {
+        "html": "HTML",
+        "css": "CSS",
+        "javascript": "جافاسكريبت",
+        "typescript": "تايب سكريبت",
+        "reactjs": "ريأكت جي إس",
+        "python": "بايثون",
+        "angular": "أنجولار",
+        "tailwindcss": "تايلويند CSS",
+        "express": "إكسبريس",
+        "mongoose": "مونغوز",
+        "mongodb": "مونغو دي بي",
+        "nodejs": "نود جي إس",
+        "flask": "فلاسك",
+        "django": "جانغو"
+      },
+      "languages": {
+        "arabic": "العربية",
+        "native": "إتقان أصلي",
+        "turkish": "التركية",
+        "limited": "إتقان مهني محدود B1",
+        "french": "الفرنسية",
+        "professional": "إتقان مهني C1",
+        "english": "الإنجليزية",
+        "professional_b2": "إتقان مهني B2"
+      },
+      "soft": {
+        "autonomy": "الاستقلالية",
+        "flexibility": "المرونة",
+        "team_management": "إدارة الفريق",
+        "mobility": "التنقل"
+      },
+      "hard": {
+        "photoshop": "فوتوشوب",
+        "github": "جيت هاب",
+        "trello": "تريلو",
+        "canva": "كانفا"
+      },
+      "interests": {
+        "video_games": "ألعاب الفيديو",
+        "playing_guitar": "العزف على الجيتار"
+      }
+    },
+    "experience": {
+      "hippomed": {
+        "title": "مطور FullStack",
+        "company": "Hippomed AI",
+        "location": "حديقة قرطاج",
+        "period": "2024/11 – الآن",
+        "desc1": "تطوير متكامل باستخدام Angular وDjango عبر مشاريع ويب متنوعة.",
+        "desc2": "قيادة مشاريع مثل Scalpel (نظام ERP طبي)، CRM للرسائل لدكتور أنس غريسي، والعديد من مواقع الأطباء.",
+        "desc3": "بناء الموقع الرسمي للجمعية التونسية لجراحي التجميل (STCE): https://stce.tn/",
+        "desc4": "دمج واجهات برمجة التطبيقات لـ Gmail وFacebook وInstagram وWhatsApp.",
+        "desc5": "استكشاف واجهات ثلاثية الأبعاد باستخدام Three.js وAngular Animations.",
+        "desc6": "الموقع: https://hippomed.ai/"
+      },
+      "infotexa": {
+        "title": "مطور ويب",
+        "company": "InfoTexa",
+        "period": "2024/06 – 2024/09",
+        "desc1": "موقع ويب تم إنشاؤه باستخدام Angular 17.",
+        "desc2": "إنشاء المكونات وتحرير المحتوى.",
+        "desc3": "دمج البريد الإلكتروني والنشرات باستخدام EmailJS.",
+        "desc4": "الرسوم المتحركة باستخدام Angular Animations.",
+        "desc5": "الموقع: https://infotexa.com/"
+      },
+      "finconnect": {
+        "title": "مطور ويب",
+        "company": "FinConnect",
+        "period": "2024/07 – 2024/09",
+        "desc1": "موقع ويب تم إنشاؤه من الصفر بناءً على تصميم العميل.",
+        "desc2": "متجاوب لجميع أحجام الشاشات (بما في ذلك الجوال والتابلت).",
+        "desc3": "الموقع: https://finconnect-fs.com/"
+      },
+      "laevitas": {
+        "title": "متدرب Front-End",
+        "company": "Laevitas",
+        "period": "2023/06 – 2023/08",
+        "desc1": "تطوير تطبيق ويب للواجهة الأمامية لإدارة الفواتير والعناصر لعدة شركات باستخدام Angular."
+      },
+      "creativespace": {
+        "title": "مطور Front-end",
+        "company": "Creative Space",
+        "period": "2023/08 – 2023/09",
+        "desc1": "تطوير صفحة هبوط ويب تعرض خدمات المركز باستخدام HTML وCSS وJavaScript."
+      },
+      "tunisair": {
+        "title": "مطور Front-end",
+        "company": "Tunisair (الخطوط التونسية)",
+        "period": "2019/06 – 2019/10",
+        "desc1": "تطوير تطبيق ويب للتحكم في واجهة إدارة الطائرات (تأخيرات، مناولة، أمتعة) باستخدام Symphony وHTML وCSS."
+      }
+    },
+    "projects": {
+      "scalpel": {
+        "name": "Scalpel - نظام ERP طبي",
+        "role": "Scrumaster / مطور Fullstack / فريق",
+        "period": "2025/01 – الآن",
+        "description": "منصة ERP لعمليات العيادة، بما في ذلك إدارة المرضى والمواعيد والفوترة.",
+        "technologies": "HTML، CSS، Tailwind، TypeScript، Angular، Python، Django"
+      },
+      "anas": {
+        "name": "د. أنس غريسي – CRM للرسائل والموقع",
+        "role": "Scrumaster / مطور Fullstack / فريق",
+        "period": "2025/05 – الآن",
+        "description": "CRM يدمج Gmail وFacebook وWhatsApp وInstagram للاتصال المركزي.",
+        "technologies": "HTML، CSS، Tailwind، Angular، Python، Django"
+      },
+      "rami": {
+        "name": "د. رامي بن عرب – موقع بورتفوليو مع لوحة إدارة",
+        "role": "Scrumaster / مطور Fullstack / فريق",
+        "period": "2025/02 – 2025/04",
+        "description": "موقع متكامل مع لوحة إدارة لحضور الطبيب عبر الإنترنت وإدارة المحتوى.",
+        "technologies": "HTML، CSS، Tailwind، Angular، Python، Django"
+      },
+      "stce": {
+        "name": "STCE – الجمعية التونسية لجراحي التجميل",
+        "role": "Scrumaster / مطور Fullstack / فريق",
+        "period": "2024/11 – 2024/12",
+        "description": "الموقع الرسمي لـ STCE (stce.tn)، عرض ملفات الأعضاء والفعاليات والمنشورات.",
+        "technologies": "HTML، CSS، Tailwind، Angular، Python، Django"
+      },
+      "clinicare": {
+        "name": "CliniCare",
+        "role": "Scrumaster / مطور FrontEnd / فريق",
+        "period": "شهر واحد",
+        "description": "تطوير موقع يسهل التواصل الداخلي والتنسيق الروتيني للأقسام الطبية، تحديث الأرشيف وضمان سهولة الوصول للبيانات لإدارة أفضل للمعلومات والوقت.",
+        "technologies": "HTML، CSS، JavaScript، NodeJS، Express، React JS، TailwindCss"
+      },
+      "portfolio": {
+        "name": "بورتفوليو شخصي",
+        "role": "Scrumaster / مطور Fullstack / فريق",
+        "period": "أسبوع واحد",
+        "description": "تطوير بورتفوليو إلكتروني يعرض كل محتوى سيرتي الذاتية، متاح للجميع دون الحاجة لأوراق أو حدود جغرافية.",
+        "technologies": "Angular، Tailwind CSS"
+      }
+    },
+    "education": {
+      "marmara": {
+        "degree": "بكالوريوس في هندسة الحاسوب",
+        "institution": "جامعة مرمرة",
+        "location": "اسطنبول، تركيا",
+        "period": "2020 – 2022",
+        "detail1": "دبلوم سنتين في هندسة الحاسوب",
+        "detail2": "جافا، جافا إف إكس، سي."
+      },
+      "sehir": {
+        "degree": "بكالوريوس في هندسة الحاسوب",
+        "institution": "جامعة شهير",
+        "period": "2016 – 2020",
+        "detail1": "دبلوم السنة الرابعة"
+      },
+      "menzah": {
+        "degree": "البكالوريا في الدراسات التقنية",
+        "institution": "ثانوية المنزه 6",
+        "period": "2010 – 2014",
+        "detail1": "ميكانيك وإلكترونيات"
+      }
+    },
+    "certificates": {
+      "angular": {
+        "name": "تطوير الواجهة الأمامية باستخدام Angular",
+        "issuer": "Board Infinity",
+        "period": "2024/06 – الآن",
+        "detail1": "خبرة عملية مع Angular لتطبيقات ويب ديناميكية وقابلة للتوسع.",
+        "detail2": "إتقان مكونات Angular، الوحدات، التوجيهات، الخدمات والقوالب.",
+        "detail3": "إتقان أفضل الممارسات لبناء تطبيقات Angular عالية الجودة."
+      },
+      "react": {
+        "name": "React متقدم",
+        "issuer": "Meta / Coursera",
+        "period": "2024/04 – 2024/05",
+        "detail1": "عرض فعال للقوائم والنماذج في React، ورفع الحالة المشتركة لتحديث البيانات.",
+        "detail2": "استخدام hooks الشائعة وبناء hooks مخصصة.",
+        "detail3": "إتقان JSX، الأنماط المتقدمة وتقنيات الاختبار/التصحيح."
+      },
+      "fullstack": {
+        "name": "شهادة تطوير الويب المتكامل Full Stack",
+        "issuer": "Coding Dojo Africa",
+        "period": "2023/10 – 2024/03",
+        "detail1": "1200+ ساعة برمجة في JavaScript وPython وJava بما في ذلك 3 مشاريع.",
+        "detail2": "برمجة زوجية والعمل على الخوارزميات يومياً.",
+        "detail3": "تدريب على المهارات الناعمة لتعزيز التواصل والعمل الجماعي."
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<section
+  id="experience"
+  class="w-[90vw] mx-auto my-8 rounded-2xl bg-gradient-to-br from-blue-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 shadow-lg px-4 py-8 md:px-12 md:py-12"
+>
+  <h2
+    class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-10 tracking-tight"
+  >
+    {{ "EXPERIENCE.HEADING" | translate }}
+  </h2>
+  <ng-container *ngIf="experience$ | async as experience">
+    <div class="relative pl-8 md:pl-16">
+      <!-- Vertical timeline line -->
+      <div
+        class="absolute left-3 top-0 h-full w-1 bg-gradient-to-b from-blue-400 via-blue-200 to-transparent dark:from-blue-700 dark:via-blue-900 dark:to-transparent rounded-full"
+      ></div>
+      <div
+        *ngFor="let exp of experience; let i = index"
+        class="mb-12 last:mb-0 relative group"
+      >
+        <!-- Timeline icon -->
+        <div
+          class="absolute -left-6 md:-left-10 top-6 flex items-center justify-center"
+        >
+          <div
+            class="w-10 h-10 rounded-full bg-white dark:bg-gray-900 shadow-lg border-4 border-blue-400 dark:border-blue-700 flex items-center justify-center group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-6 h-6 text-blue-500 dark:text-blue-300"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M6 7V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" />
+              <rect width="16" height="13" x="4" y="7" rx="2" />
+              <path d="M16 13h.01" />
+            </svg>
+          </div>
+        </div>
+        <!-- Experience card -->
+        <div
+          class="bg-white/90 dark:bg-gray-800 rounded-xl shadow-md border border-blue-100 dark:border-blue-900 group-hover:shadow-xl transition-shadow md:ml-8 px-6 py-5"
+        >
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between mb-2"
+          >
+            <div>
+              <h3
+                class="text-xl font-semibold text-blue-900 dark:text-blue-200"
+              >
+                {{ exp.title | translate }}
+              </h3>
+              <p class="text-gray-700 dark:text-gray-300">
+                {{ exp.company | translate
+                }}<span *ngIf="exp.location">
+                  &mdash;
+                  <span class="italic">{{
+                    exp.location | translate
+                  }}</span></span
+                >
+              </p>
+            </div>
+            <span
+              class="text-sm text-gray-500 dark:text-gray-300 mt-2 md:mt-0 font-medium"
+              >{{ exp.period | translate }}</span
+            >
+          </div>
+          <ul class="space-y-2 mt-3">
+            <li
+              *ngFor="let desc of exp.description"
+              class="flex items-start gap-3"
+            >
+              <span
+                class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-500 dark:text-blue-300 mt-1"
+              >
+                <svg
+                  class="w-3.5 h-3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </span>
+              <span class="text-gray-800 dark:text-gray-200 leading-relaxed">{{
+                desc | translate
+              }}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</section>

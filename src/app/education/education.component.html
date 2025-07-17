@@ -1,0 +1,76 @@
+<section
+  id="education"
+  class="w-[90vw] mx-auto my-8 rounded-2xl bg-gradient-to-br from-green-50 via-white to-blue-50 dark:from-green-900 dark:via-gray-950 dark:to-blue-950 shadow-lg px-4 py-8 md:px-12 md:py-12"
+>
+  <h2
+    class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-10 tracking-tight"
+  >
+    {{ "EDUCATION.HEADING" | translate }}
+  </h2>
+  <ng-container *ngIf="education$ | async as education">
+    <div class="relative pl-8 md:pl-16">
+      <!-- Vertical timeline line -->
+      <div
+        class="absolute left-3 top-0 h-full w-1 bg-gradient-to-b from-green-400 via-blue-200 to-transparent dark:from-green-700 dark:via-blue-900 dark:to-transparent rounded-full"
+      ></div>
+      <div
+        *ngFor="let edu of education; let i = index"
+        class="mb-12 last:mb-0 relative group"
+      >
+        <!-- Timeline icon -->
+        <div
+          class="absolute -left-6 md:-left-10 top-6 flex items-center justify-center"
+        >
+          <div
+            class="w-10 h-10 rounded-full bg-white dark:bg-gray-900 shadow-lg border-4 border-green-400 dark:border-green-700 flex items-center justify-center group-hover:scale-110 transition-transform"
+          >
+            <svg
+              class="w-6 h-6 text-green-600 dark:text-green-300"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 14l9-5-9-5-9 5 9 5z" />
+              <path
+                d="M12 14l6.16-3.422A12.083 12.083 0 0 1 21 17.5c0 1.104-4.03 2-9 2s-9-.896-9-2c0-2.21 3.582-4 8-4 .34 0 .675.01 1.006.03L12 14z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- Education card -->
+        <div
+          class="bg-white/90 dark:bg-gray-800 rounded-xl shadow-md border border-green-100 dark:border-green-900 group-hover:shadow-xl transition-shadow md:ml-8 px-6 py-5"
+        >
+          <div class="flex items-center gap-4 mb-2">
+            <h3
+              class="text-xl font-semibold text-green-800 dark:text-green-300"
+            >
+              {{ edu.degree | translate }}
+            </h3>
+          </div>
+          <div
+            class="flex flex-col md:flex-row md:items-center md:justify-between mb-1"
+          >
+            <span class="text-gray-700 dark:text-gray-300 font-medium"
+              >{{ edu.institution | translate
+              }}<span *ngIf="edu.location"
+                >, {{ edu.location | translate }}</span
+              ></span
+            >
+            <span
+              class="text-sm text-gray-500 dark:text-gray-300 mt-1 md:mt-0 font-medium"
+              >{{ edu.period | translate }}</span
+            >
+          </div>
+          <ul
+            class="text-sm text-green-600 dark:text-green-300 mt-2 list-disc list-inside"
+            *ngIf="edu.details && edu.details.length"
+          >
+            <li *ngFor="let detail of edu.details">{{ detail | translate }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</section>
