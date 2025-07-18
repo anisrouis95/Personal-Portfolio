@@ -1,28 +1,53 @@
 <footer
-  class="w-full bg-gradient-to-br from-blue-50 via-white to-green-50 border-t border-blue-100 dark:bg-gray-900 dark:border-gray-700 py-8 px-4"
+  class="w-full bg-gradient-to-br from-blue-50 via-white to-green-50 border-t border-blue-100 dark:bg-gray-900 dark:bg-none dark:border-gray-700 py-8 px-4"
 >
   <div
     class="w-[90vw] max-w-7xl mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-y-8 gap-x-16"
   >
     <!-- Left: Logo/Name -->
     <div class="flex flex-col items-center md:items-start">
-      <span class="text-2xl font-extrabold text-blue-700 tracking-tight mb-1"
+      <span
+        class="text-2xl font-extrabold text-blue-700 dark:text-blue-300 tracking-tight mb-1"
         >Anis Rouis</span
       >
-      <span class="text-xs text-gray-500">Fullstack Developer</span>
+      <span class="text-xs text-gray-500 dark:text-gray-300">{{
+        "FOOTER.JOB_TITLE" | translate
+      }}</span>
     </div>
     <!-- Center: Navigation -->
     <nav
       class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-base font-medium"
     >
-      <a href="#summary" class="hover:text-blue-600 transition">About</a>
-      <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
-      <a href="#experience" class="hover:text-blue-600 transition"
-        >Experience</a
+      <a
+        href="#summary"
+        class="hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-gray-200 transition"
+        >{{ "FOOTER.ABOUT" | translate }}</a
       >
-      <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-      <a href="#education" class="hover:text-blue-600 transition">Education</a>
-      <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      <a
+        href="#skills"
+        class="hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-gray-200 transition"
+        >{{ "FOOTER.SKILLS" | translate }}</a
+      >
+      <a
+        href="#experience"
+        class="hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-gray-200 transition"
+        >{{ "FOOTER.EXPERIENCE" | translate }}</a
+      >
+      <a
+        href="#projects"
+        class="hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-gray-200 transition"
+        >{{ "FOOTER.PROJECTS" | translate }}</a
+      >
+      <a
+        href="#education"
+        class="hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-gray-200 transition"
+        >{{ "FOOTER.EDUCATION" | translate }}</a
+      >
+      <a
+        href="#contact"
+        class="hover:text-blue-600 dark:hover:text-blue-400 text-gray-700 dark:text-gray-200 transition"
+        >{{ "FOOTER.CONTACT" | translate }}</a
+      >
     </nav>
     <!-- Right: Contact Info -->
     <div class="flex flex-col items-center md:items-end gap-2">
@@ -31,7 +56,7 @@
       >
         <!-- Pin icon for address -->
         <svg
-          class="w-4 h-4 text-blue-500"
+          class="w-4 h-4 text-blue-500 dark:text-blue-300"
           fill="none"
           stroke="currentColor"
           stroke-width="2"
@@ -42,14 +67,14 @@
           />
           <circle cx="12" cy="12" r="3" />
         </svg>
-        <span>123 Main St, Tunis, Tunisia</span>
+        <span>{{ "FOOTER.ADDRESS" | translate }}</span>
       </div>
       <div
         class="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300"
       >
         <!-- Envelope icon for email -->
         <svg
-          class="w-4 h-4 text-blue-500"
+          class="w-4 h-4 text-blue-500 dark:text-blue-300"
           fill="none"
           stroke="currentColor"
           stroke-width="2"
@@ -58,8 +83,10 @@
           <rect width="20" height="14" x="2" y="5" rx="2" />
           <path d="M22 7l-10 6-10-6" />
         </svg>
-        <a href="mailto:anis.rouis@email.com" class="hover:underline"
-          >anis.rouis&#64;email.com</a
+        <a
+          href="mailto:anis.rouis.marmara@gmail.com"
+          class="hover:underline text-gray-700 dark:text-gray-300"
+          >{{ "FOOTER.EMAIL" | translate }}</a
         >
       </div>
       <div
@@ -67,7 +94,7 @@
       >
         <!-- Phone icon for phone number -->
         <svg
-          class="w-4 h-4 text-blue-500"
+          class="w-4 h-4 text-blue-500 dark:text-blue-300"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -80,11 +107,11 @@
             stroke-linejoin="round"
           />
         </svg>
-        <span>+216 12 345 678</span>
+        <span>{{ "FOOTER.PHONE" | translate }}</span>
       </div>
     </div>
   </div>
-  <div class="mt-8 text-center text-xs text-gray-400">
+  <div class="mt-8 text-center text-xs text-gray-400 dark:text-gray-500">
     &copy; {{ "FOOTER.COPYRIGHT" | translate }}
   </div>
 </footer>

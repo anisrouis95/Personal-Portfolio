@@ -19,7 +19,8 @@
       "PROJECTS": "Projets",
       "EDUCATION": "Éducation",
       "CONTACT": "Contact"
-    }
+    },
+    "DOWNLOAD_CV": "Télécharger le CV"
   },
   "SUMMARY": {
     "HEADING": "À propos de moi",
@@ -129,7 +130,17 @@
   "FOOTER": {
     "COPYRIGHT": "2024 Anis Rouis. Tous droits réservés.",
     "DARK": "Mode sombre",
-    "LIGHT": "Mode clair"
+    "LIGHT": "Mode clair",
+    "ABOUT": "À propos",
+    "SKILLS": "Compétences",
+    "EXPERIENCE": "Expérience",
+    "PROJECTS": "Projets",
+    "EDUCATION": "Éducation",
+    "CONTACT": "Contact",
+    "JOB_TITLE": "Développeur Fullstack",
+    "ADDRESS": "28 Rue el Ferdaous, Ariana, 2080, Tunis",
+    "EMAIL": "anis.rouis.marmara@gmail.com",
+    "PHONE": "+216 92 718 505"
   },
   "resume": {
     "summary": {

@@ -7,6 +7,7 @@ import {
 } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -33,17 +34,32 @@ export class ContactComponent {
     return this.contactForm.controls;
   }
 
-  onSubmit() {
+  async onSubmit() {
     this.submitted = true;
     if (this.contactForm.invalid) {
       return;
     }
     this.success = false;
-    // Simulate submission
-    setTimeout(() => {
+    const formValue = this.contactForm.value;
+    const templateParams = {
+      name: formValue.fullName,
+      email: formValue.email,
+      title: formValue.subject,
+      message: formValue.message,
+    };
+    try {
+      await emailjs.send(
+        'service_3wpim8p',
+        'template_9amthl9',
+        templateParams,
+        'i1cXs-775e3Q-E1OX'
+      );
       this.success = true;
       this.contactForm.reset();
       this.submitted = false;
-    }, 1200);
+    } catch (error) {
+      this.success = false;
+      alert('Failed to send message. Please try again.');
+    }
   }
 }

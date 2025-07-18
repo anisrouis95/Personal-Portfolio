@@ -23,6 +23,7 @@ export class HeaderComponent {
   constructor(private translate: TranslateService) {
     translate.addLangs(this.languages.map((l) => l.code));
     translate.setDefaultLang('en');
+    this.translate.use('en');
     this.currentLang = translate.getDefaultLang();
     // Initialize theme from localStorage or system preference
     const savedTheme = localStorage.getItem('theme');
