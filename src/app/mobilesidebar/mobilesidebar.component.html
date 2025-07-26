@@ -1,0 +1,236 @@
+<div
+  *ngIf="open"
+  @slideInOut
+  class="fixed inset-0 w-full h-full z-50 bg-white dark:bg-gray-900 shadow-lg flex flex-col items-center justify-center px-6 py-10 overflow-y-auto"
+>
+  <button
+    class="absolute top-6 right-6 text-4xl text-gray-700 dark:text-gray-200 focus:outline-none"
+    (click)="close()"
+    aria-label="Close menu"
+  >
+    &times;
+  </button>
+  <!-- Navigation Links -->
+  <nav class="flex flex-col items-center gap-y-8 mt-10 mb-8 w-full">
+    <a
+      href="#summary"
+      (click)="close()"
+      class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{{ "HEADER.NAV.SUMMARY" | translate }}</a
+    >
+    <a
+      href="#skills"
+      (click)="close()"
+      class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{{ "HEADER.NAV.SKILLS" | translate }}</a
+    >
+    <a
+      href="#experience"
+      (click)="close()"
+      class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{{ "HEADER.NAV.EXPERIENCE" | translate }}</a
+    >
+    <a
+      href="#projects"
+      (click)="close()"
+      class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{{ "HEADER.NAV.PROJECTS" | translate }}</a
+    >
+    <a
+      href="#education"
+      (click)="close()"
+      class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{{ "HEADER.NAV.EDUCATION" | translate }}</a
+    >
+    <a
+      href="#certifications"
+      (click)="close()"
+      class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{{ "HEADER.NAV.CERTIFICATES" | translate }}</a
+    >
+    <a
+      href="#contact"
+      (click)="close()"
+      class="text-2xl font-bold text-gray-900 dark:text-white"
+      >{{ "HEADER.NAV.CONTACT" | translate }}</a
+    >
+  </nav>
+  <!-- Download CV Button -->
+  <a
+    href="assets/CV%20Anis%20Rouis.pdf"
+    download
+    class="w-full mb-6 inline-flex items-center justify-center whitespace-nowrap px-6 py-3 rounded-md text-base font-semibold shadow-sm transition-colors bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white"
+  >
+    <svg
+      class="w-5 h-5 mr-2"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12"
+      />
+    </svg>
+    {{ "HEADER.DOWNLOAD_CV" | translate }}
+  </a>
+  <!-- Language Switcher -->
+  <div class="w-full flex justify-center mb-4">
+    <div class="relative">
+      <button
+        class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400 text-gray-700 dark:text-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        type="button"
+        (click)="toggleDropdown()"
+      >
+        <span class="flex items-center gap-x-2">
+          <svg
+            *ngIf="currentLang === 'en'"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <circle cx="12" cy="12" r="10" fill="#2563eb" />
+            <text
+              x="12"
+              y="16"
+              text-anchor="middle"
+              font-size="10"
+              fill="white"
+            >
+              EN
+            </text>
+          </svg>
+          <svg
+            *ngIf="currentLang === 'fr'"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <circle cx="12" cy="12" r="10" fill="#22c55e" />
+            <text
+              x="12"
+              y="16"
+              text-anchor="middle"
+              font-size="10"
+              fill="white"
+            >
+              FR
+            </text>
+          </svg>
+          <svg
+            *ngIf="currentLang === 'ar'"
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <circle cx="12" cy="12" r="10" fill="#f59e42" />
+            <text
+              x="12"
+              y="16"
+              text-anchor="middle"
+              font-size="10"
+              fill="white"
+            >
+              AR
+            </text>
+          </svg>
+          <span class="font-medium">{{
+            "HEADER.LANG." + currentLang.toUpperCase() | translate
+          }}</span>
+        </span>
+        <svg
+          class="w-4 h-4 ml-2"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+      </button>
+      <div
+        class="origin-top-right absolute right-0 mt-2 w-44 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
+        *ngIf="dropdownOpen"
+        role="menu"
+        aria-orientation="vertical"
+        tabindex="-1"
+      >
+        <div class="py-1" role="none">
+          <button
+            *ngFor="let lang of languages"
+            (click)="switchLang(lang.code)"
+            class="flex items-center w-full px-4 py-2 text-sm text-gray-700 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-700 focus:bg-gray-200 dark:focus:bg-gray-700"
+            role="menuitem"
+            tabindex="-1"
+          >
+            <svg
+              *ngIf="lang.code === 'en'"
+              class="w-5 h-5 mr-2"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <circle cx="12" cy="12" r="10" fill="#2563eb" />
+              <text
+                x="12"
+                y="16"
+                text-anchor="middle"
+                font-size="10"
+                fill="white"
+              >
+                EN
+              </text>
+            </svg>
+            <svg
+              *ngIf="lang.code === 'fr'"
+              class="w-5 h-5 mr-2"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <circle cx="12" cy="12" r="10" fill="#22c55e" />
+              <text
+                x="12"
+                y="16"
+                text-anchor="middle"
+                font-size="10"
+                fill="white"
+              >
+                FR
+              </text>
+            </svg>
+            <svg
+              *ngIf="lang.code === 'ar'"
+              class="w-5 h-5 mr-2"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <circle cx="12" cy="12" r="10" fill="#f59e42" />
+              <text
+                x="12"
+                y="16"
+                text-anchor="middle"
+                font-size="10"
+                fill="white"
+              >
+                AR
+              </text>
+            </svg>
+            <span>{{ lang.label }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Dark/Light Mode Toggle -->
+  <div class="w-full flex justify-center mt-4">
+    <label class="switch">
+      <input type="checkbox" [checked]="isDark" (change)="toggleDarkMode()" />
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>

@@ -12,6 +12,15 @@
       "FR": "الفرنسية",
       "AR": "العربية"
     },
+    "NAV": {
+      "SUMMARY": "حول",
+      "SKILLS": "المهارات",
+      "EXPERIENCE": "الخبرة",
+      "PROJECTS": "المشاريع",
+      "EDUCATION": "التعليم",
+      "CERTIFICATES": "الشهادات",
+      "CONTACT": "اتصل"
+    },
     "DOWNLOAD_CV": "تحميل السيرة الذاتية"
   },
   "SUMMARY": {
@@ -108,6 +117,9 @@
       "YEAR": "2018"
     }
   },
+  "CERTIFICATES": {
+    "HEADING": "الشهادات"
+  },
   "CONTACT": {
     "HEADING": "اتصل بي",
     "FULL_NAME": "الاسم الكامل",
@@ -128,6 +140,7 @@
     "EXPERIENCE": "الخبرة",
     "PROJECTS": "المشاريع",
     "EDUCATION": "التعليم",
+    "CERTIFICATES": "الشهادات",
     "CONTACT": "اتصل",
     "JOB_TITLE": "مطور برمجيات متكامل",
     "ADDRESS": "28 شارع الفردوس، أريانة، 2080، تونس",

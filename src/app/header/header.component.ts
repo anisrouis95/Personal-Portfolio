@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { SidebarService } from '../mobilesidebar/sidebar.service';
 
 @Component({
   selector: 'app-header',
@@ -19,8 +20,12 @@ export class HeaderComponent {
   currentLang = 'en';
   dropdownOpen = false;
   isDark = false;
+  sidebarOpen = false;
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService,
+    private sidebar: SidebarService
+  ) {
     translate.addLangs(this.languages.map((l) => l.code));
     translate.setDefaultLang('en');
     this.translate.use('en');
@@ -68,5 +73,9 @@ export class HeaderComponent {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  }
+
+  openMobileSidebar() {
+    this.sidebar.open();
   }
 }

@@ -18,6 +18,7 @@
       "EXPERIENCE": "Expérience",
       "PROJECTS": "Projets",
       "EDUCATION": "Éducation",
+      "CERTIFICATES": "Certificats",
       "CONTACT": "Contact"
     },
     "DOWNLOAD_CV": "Télécharger le CV"
@@ -115,6 +116,9 @@
       "SCHOOL": "École Nationale Supérieure d'Informatique",
       "YEAR": "2018"
     }
+  },
+  "CERTIFICATES": {
+    "HEADING": "Certificats"
   },
   "CONTACT": {
     "HEADING": "Contactez-moi",

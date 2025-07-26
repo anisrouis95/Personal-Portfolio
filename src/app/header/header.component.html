@@ -2,51 +2,20 @@
   class="sticky top-0 z-30 w-full bg-white/80 dark:bg-gray-900/90 backdrop-blur shadow-sm border-b border-gray-200 dark:border-gray-800"
 >
   <div
-    class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center py-7 px-4 md:px-12 gap-y-6 md:gap-y-0 md:gap-x-12"
+    class="max-w-6xl mx-auto flex flex-row items-center justify-between md:justify-start py-7 px-4 md:px-12"
   >
-    <!-- Left: Name & Title -->
-    <div
-      class="flex flex-col md:flex-row md:items-center gap-y-2 md:gap-y-0 md:gap-x-6"
-    >
+    <!-- Left: Name -->
+    <div class="flex-shrink-0">
       <span
         class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
         >{{ "HEADER.NAME" | translate }}</span
       >
-      <div class="flex flex-row items-center gap-x-4">
-        <!-- Download CV Button -->
-        <a
-          href="assets/CV%20Anis%20Rouis.pdf"
-          download
-          class="ml-4 inline-flex items-center whitespace-nowrap px-4 py-2 rounded-md text-sm font-semibold shadow-sm transition-colors bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-blue-500 dark:hover:bg-blue-600 dark:text-white"
-        >
-          <svg
-            class="w-4 h-4 mr-2"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12"
-            />
-          </svg>
-          <span class="whitespace-nowrap">{{
-            "HEADER.DOWNLOAD_CV" | translate
-          }}</span>
-        </a>
-      </div>
-      <span class="hidden md:inline-block mx-3 text-gray-300 dark:text-gray-600"
-        >|</span
-      >
-      <!-- <span
-        class="text-base md:text-lg text-gray-600 dark:text-gray-300 font-medium"
-        >{{ "HEADER.TITLE" | translate }}</span
-      > -->
     </div>
+
     <!-- Center: Navigation -->
-    <nav class="hidden md:flex gap-x-10 text-base font-medium">
+    <nav
+      class="hidden md:flex flex-1 justify-center mx-8 lg:mx-12 gap-x-8 lg:gap-x-10 text-base font-medium"
+    >
       <a
         href="#summary"
         (click)="scrollToSection($event, 'summary')"
@@ -78,16 +47,45 @@
         >{{ "HEADER.NAV.EDUCATION" | translate }}</a
       >
       <a
+        href="#certifications"
+        (click)="scrollToSection($event, 'certifications')"
+        class="transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:text-blue-700 dark:focus:text-blue-400 focus:outline-none"
+        >{{ "HEADER.NAV.CERTIFICATES" | translate }}</a
+      >
+      <a
         href="#contact"
         (click)="scrollToSection($event, 'contact')"
         class="transition-colors text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:text-blue-700 dark:focus:text-blue-400 focus:outline-none"
         >{{ "HEADER.NAV.CONTACT" | translate }}</a
       >
     </nav>
-    <!-- Right: Socials & Language & Dark Mode -->
-    <div class="flex items-center gap-x-4 md:gap-x-8">
+    <!-- Mobile Menu Button -->
+    <button
+      class="block md:hidden p-2 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400 rounded-md"
+      (click)="openMobileSidebar()"
+      aria-label="Open mobile menu"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+
+    <!-- Right: Socials & Language & Dark Mode (Desktop Only) -->
+    <div
+      class="hidden md:flex items-center flex-shrink-0 ml-4 md:ml-8 gap-x-4 md:gap-x-6"
+    >
       <!-- Social Icons -->
-      <div class="hidden md:flex gap-x-4">
+      <div class="flex gap-x-3">
         <ul class="example-2 flex flex-row items-center gap-x-2 m-0 p-0">
           <li class="icon-content">
             <a
@@ -137,15 +135,18 @@
               </svg>
             </a>
           </li>
-          <li class="icon-content">
+          <li class="icon-content group">
             <a
-              data-social="github"
+              data-social="email"
               aria-label="Email"
               href="mailto:anis.rouis.marmara@gmail.com"
+              class="rounded-full"
             >
-              <div class="filled"></div>
+              <div
+                class="filled bg-white group-hover:bg-[#D93025] transition-colors duration-200"
+              ></div>
               <svg
-                class="bi bi-envelope"
+                class="bi bi-envelope group-hover:text-white transition-colors duration-200"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 height="16"
@@ -160,8 +161,10 @@
           </li>
         </ul>
       </div>
-      <!-- Language Switcher & Dark Mode Toggle -->
-      <div class="flex items-center gap-x-3 md:gap-x-5 relative">
+      <!-- Language Switcher & Dark Mode Toggle (Desktop Only) -->
+      <div
+        class="hidden md:flex items-center gap-x-4 md:gap-x-5 ml-2 md:ml-4 relative"
+      >
         <!-- Language Switcher -->
         <div class="relative">
           <button
@@ -321,7 +324,5 @@
         </label>
       </div>
     </div>
-    <!-- Mobile nav toggle (optional for future) -->
   </div>
-  <!-- Mobile nav (optional for future) -->
 </header>

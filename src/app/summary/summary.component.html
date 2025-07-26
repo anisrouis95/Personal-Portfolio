@@ -9,6 +9,7 @@
     <div class="flex-1 flex items-center justify-center">
       <div
         class="rounded-full bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 shadow-md p-6 md:p-10 flex items-center justify-center"
+        @fadeInImage
       >
         <img
           src="assets/images/Personal_Image.png"
@@ -24,15 +25,20 @@
       <ng-container *ngIf="summary$ | async as summary">
         <h2
           class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight"
+          @fadeInTitle
         >
           {{ summary.name | translate }}
         </h2>
         <h3
           class="text-xl md:text-2xl font-semibold text-blue-700 dark:text-blue-300 mb-2"
+          @fadeInSubtitle
         >
           {{ summary.title | translate }}
         </h3>
-        <div class="text-gray-700 dark:text-gray-300 text-base md:text-lg mb-4">
+        <div
+          class="text-gray-700 dark:text-gray-300 text-base md:text-lg mb-4"
+          @fadeInSubtitle
+        >
           <span class="block"
             ><strong>Email:</strong> {{ summary.email | translate }}</span
           >
@@ -42,6 +48,7 @@
         </div>
         <p
           class="text-lg md:text-xl text-gray-800 dark:text-gray-200 font-medium leading-relaxed"
+          @fadeInWriting
         >
           {{ summary.profile | translate }}
         </p>
